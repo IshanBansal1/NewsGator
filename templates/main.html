@@ -1,0 +1,76 @@
+<head>
+    <title>NewsGator</title>
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/> 
+</head>
+{% if not title %}
+<body>
+    <section class="bg">
+        <div>
+            <h1>NewsGator</h1>
+            <h2>Making Social Media Postings Easier for Your Business</h2>
+        </div>
+    </section>
+    <main class="bg4">
+        <center>
+            <h1>⟱</h1>
+        </center>
+    </main>
+    <main class="bg2">
+        <center>
+        <form action="#" method="post">
+            <h1>News Gatherer</h1>
+            <h2>Enter Details About The Kind Of News You Want</h2>
+            <p>Location</p>
+            <p><input type="text" name="Location" placeholder="California, Canada"/></p>
+            <p>Any Keywords</p>
+            <p><input type="text" name="Keywords" placeholder="Education"/></p>
+            <p>Amount of results</p>
+            <p><input type="text" name="amount" placeholder="10"/></p>
+            <p><input type="submit" name="submit" class="sub" value="Submit"/></p>
+        </form>
+        </center>
+    </main>
+</body>
+
+{% endif %}
+
+{% if title %}
+<div class="row">
+    <body class="bg3">
+    <div class="column1">
+        <h1>NewsGator</h1>
+        <h2>Top {{amount}} News</h2>
+    </div>
+    <div class="column2">
+    {% for i in range(amount) %}
+        <h2>{{i + 1}}. {{title[i]}}</h2>
+        <p><a href={{url[i]}}>{{url[i]}}</a></p>
+        <p>{{description[i]}}</p>
+    {% endfor %}
+    </div>
+    </body>
+</div>
+{% endif %}
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">˄</button>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+

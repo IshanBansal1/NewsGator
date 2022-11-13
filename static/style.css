@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.bg {
+    width: 100vw;
+    height: 90vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    color: white;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/id/1199606461/vector/background-scene-with-crocodiles-in-the-river.jpg?b=1&s=612x612&w=0&k=20&c=a9ARnxr73WkQAK1xk17SbP0zWx4feplpaj9EqxVsUVc=);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg2 {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(https://wallpaperaccess.com/full/2097761.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: crisp-edges;
+}
+
+.bg h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.bg3 {
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(https://media.istockphoto.com/id/1152451809/photo/abstract-blurred-soft-white-silver-beautiful-with-glitter-bokeh-round-light-panoramic.jpg?b=1&s=170667a&w=0&k=20&c=8_nd7XkKE7CJnGUJw5Mu3T52RfnJwGMfUz8WxAqJTHY=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg4 {
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+    color: white;
+
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg3 h2 {
+    font-family: 'Century Gothic', 'sans-serif';
+    font-style: bold;
+    color: black;
+}
+
+.bg3 p {
+    font-family: 'Verdana', 'sans-serif';
+    color: black;
+}
+
+input {
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+select {
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.sub {
+    background-color: white;
+    filter: drop-shadow(7px 7px 5px black);
+}
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    padding: 15px; 
+    font-size: 50px; 
+    background: rgba(0, 0, 0, 0.5);
+    text-decoration:none; 
+    border-radius: 50%;
+    display: block;
+    height: 80px;
+    width: 80px;
+    color: white;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+.row {
+    display: flex;
+}
+
+.column1 {
+    float: left;
+    width: 18vw;
+    padding-left: 2vw;
+}
+
+.column1 h1 {
+    color: rgb(18, 153, 18);
+}
+
+.column1 h2 {
+    color: rgb(129, 167, 40);
+    overflow: hidden; 
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 4s steps(40,end),
+        blink-caret .15s step-end infinite;
+}
+
+.column2 {
+    float: left;
+    width: 80vw;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+    100% { border-color: transparent;}
+}
+  
